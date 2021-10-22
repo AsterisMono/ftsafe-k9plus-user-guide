@@ -23,5 +23,14 @@ TBD
 
 
 
-## 一共有几个PIN需要记？
-TBD
+## 一共有几个PIN？
+ - PGP：3个
+   - PIN（使用PGP智能卡时需要提供）
+   - Admin PIN（编辑PGP智能卡时需要提供）
+   - Reset Code（用于编辑PIN，或者在PIN尝试次数过多被锁死时重置PIN）
+ - PIV：3个
+   - PIN（使用PIV时需要提供）
+   - PUK（用来重置PIN或者在PIN锁死时进行解锁）
+   - MKey（用于管理PIV，比如导入证书）
+ - FIDO2：1个
+   - PIN（可以在Win10的密钥管理中设置，每次两步验证时使用）
