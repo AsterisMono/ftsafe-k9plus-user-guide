@@ -330,10 +330,12 @@ Q - quit
    [ultimate] (1). ftsafe <ftsafe@ftsafe.com>
    ```
 
-## 备份私钥
+## 备份私钥与导出公钥
 
-```
-gpg --export -a "i@example.com" > public.key
+> 注意：如果你使用的是Powershell，请手动将产出文件的编码修改为`UTF-8 without BOM`，否则导入时无法被程序识别
+
+```bash
+gpg --export -a "i@example.com" > public.key # 导出公钥
 gpg --export-secret-key -a "i@example.com" > private.key
 ```
 
@@ -351,8 +353,8 @@ Please select where to store the key:
    (3) Authentication key
 Your selection? 1
 
-gpg> key 1
-gpg> key 2
+gpg> key 1 # 先反选1号
+gpg> key 2 # 再选择2号
 gpg> keytocard
 Please select where to store the key:
    (2) Encryption key
@@ -366,6 +368,39 @@ Please select where to store the key:
 Your selection? 3
 
 gpg> save # 保存修改
+```
+
+## 生成撤销证书
+
+> 假如你忘了主密钥的密码，或者丢失了对主密钥的控制权（丢失，被夺取），如果没有撤销凭证的话， 除了一个个通知你的朋友们没有任何办法 证明你不再使用这个密钥，这简直是灾难。
+>
+> Credit: [2021年，用更现代的方法使用PGP（上）](https://ulyc.github.io/2021/01/13/2021年-用更现代的方法使用PGP-上/)
+
+```
+# step 0
+gpg --gen-revoke -ao   revoke.pgp   linus # uid 或者key id
+
+# step 1
+sec  rsa3072/99F583599B7E31F1 2021-01-11 linus <linus@outlook.com>
+
+Create a revocation certificate for this key? (y/N) y
+Please select the reason for the revocation:
+  0 = No reason specified
+  1 = Key has been compromised
+  2 = Key is superseded
+  3 = Key is no longer used
+  Q = Cancel
+(Probably you want to select 1 here) 3
+
+# 按提示走完流程就可以
+```
+
+## 删除电脑上的私钥
+
+> 你备份私钥了没？
+
+```bash
+gpg --delete-secret-keys "i@example.com"
 ```
 
 ## 使用
