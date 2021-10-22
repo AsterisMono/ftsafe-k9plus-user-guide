@@ -341,7 +341,7 @@ gpg --export-secret-key -a "i@example.com" > private.key
 
 ## 将三个子密钥导入智能卡
 
-> 此步结束后将无法再备份私钥。
+> 此步结束后将无法再备份私钥。（或者可能我弄混了？应该是不能备份子密钥的私钥吧）
 
 > Credit: [可能是最好的 Yubikey + GPG/SSH 智能卡教程 (mechanus.io)](https://mechanus.io/ke-neng-shi-zui-hao-de-yubikey-gpg-ssh-zhi-neng-qia-jiao-cheng/)
 
