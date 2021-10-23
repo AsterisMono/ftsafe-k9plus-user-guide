@@ -33,7 +33,7 @@ K9+和a4b支持`HOTP (HMAC-based one-time password)`，但不支持基于时间�
 [PIV on K9+](https://github.com/AsterisMono/ftsafe-k9plus-user-guide/blob/main/guides/piv.md)
 
 ## SSH
-TBD
+[SSH on K9+](https://github.com/AsterisMono/ftsafe-k9plus-user-guide/blob/main/guides/ssh.md)
 
 ## 一共有几个PIN？
  - PGP：3个
