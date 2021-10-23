@@ -12,6 +12,14 @@
 ## FIDO & FIDO2
 一般不需要配置，可以直接使用。
 
+> 注意：当网页弹出含有`Windows Hello`选项的验证提示时，并不能使用安全密钥，需要按取消跳过`Windows Hello`认证环节。
+<img src="https://user-images.githubusercontent.com/54884471/138551444-c50b10f1-f03d-4c5e-8368-60913726f74a.png" width="300" height="350">
+
+这里点击取消
+
+<img src="https://user-images.githubusercontent.com/54884471/138551558-4e712a3c-e267-49bb-b18a-46fb6f429812.png" width="330" height="230">
+
+
 也可以在使用前配置PIN：`Windows设置 - 账户 - 登录选项 - 安全密钥 - 管理`
 
 关于FIDO的视频介绍：[fido安全密钥、两步认证？一部视频解答你所有的疑惑！](https://www.bilibili.com/video/BV1GL4y1h7aq)
