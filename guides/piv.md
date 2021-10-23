@@ -24,6 +24,6 @@ PIN相关介绍在首页
 
 <img src="image-20211023195727296.png" alt="image-20211023195727296" style="zoom:50%;" />
 
-## SSH？
+## SSH with PIV
 
-TBD
+[SSH on K9+](https://github.com/AsterisMono/ftsafe-k9plus-user-guide/blob/main/guides/ssh.md)
