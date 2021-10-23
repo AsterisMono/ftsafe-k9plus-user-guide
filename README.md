@@ -30,7 +30,7 @@ K9+和a4b支持`HOTP (HMAC-based one-time password)`，但不支持基于时间�
 可以在飞天官方程序中配置`HOTP`或`Challenge-Response`Key，但暂时我还没有发现能够使用的场景
 
 ## PIV
-
+[PIV on K9+](https://github.com/AsterisMono/ftsafe-k9plus-user-guide/blob/main/guides/piv.md)
 
 ## SSH
 TBD
