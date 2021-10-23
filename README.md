@@ -23,11 +23,14 @@
 也可以在使用前配置PIN：`Windows设置 - 账户 - 登录选项 - 安全密钥 - 管理`
 
 关于FIDO的视频介绍：[fido安全密钥、两步认证？一部视频解答你所有的疑惑！](https://www.bilibili.com/video/BV1GL4y1h7aq)
-## PIV
-TBD
 
 ## OTP
-TBD
+K9+和a4b支持`HOTP (HMAC-based one-time password)`，但不支持基于时间的`TOTP`。
+
+可以在飞天官方程序中配置`HOTP`或`Challenge-Response`Key，但暂时我还没有发现能够使用的场景
+
+## PIV
+
 
 ## SSH
 TBD
