@@ -409,12 +409,12 @@ Please select the reason for the revocation:
 
 ## 使用
 
-### Kleopatra
+### Kleopatra & GPG
 
-需要设备上存有**被剥离的私钥**，只有公钥是不能调起智能卡的。
+需要设备上存有**被剥离的私钥**或**从卡上fetch**，只有本地导入的公钥是不能调起智能卡的。
 
 ### OpenKeychain
 
 安卓设备可以使用OpenKeychain
 
-设置步骤：导入**公钥**->扫描智能卡
+设置步骤：导入**公钥**->扫描智能卡 或 直接扫描智能卡（已经上传到keyserver，并且卡内写了fetch字段的情况）
