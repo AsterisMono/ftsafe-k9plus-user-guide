@@ -233,8 +233,6 @@ Q - quit
    ```powershell
    PS C:\Users\Mikiiki> gpg --expert --edit-key "ftsafe@ftsafe.com"
    
-   # 注意这里：如果你的密钥类型选择没有RSA (set your own capabilities)，请用--expert开关重新启动gpg
-   
    gpg (GnuPG) 2.2.28; Copyright (C) 2021 g10 Code GmbH
    This is free software: you are free to change and redistribute it.
    There is NO WARRANTY, to the extent permitted by law.
@@ -255,13 +253,13 @@ Q - quit
       (5) Elgamal (encrypt only)
       (6) RSA (encrypt only)
       (7) DSA (set your own capabilities)
-      (8) RSA (set your own capabilities) # 见上文
+      (8) RSA (set your own capabilities) 
      (10) ECC (sign only)
      (11) ECC (set your own capabilities)
      (12) ECC (encrypt only)
      (13) Existing key
      (14) Existing key from card
-   Your selection? 8
+   Your selection? 8 # 注意这里：如果你的密钥类型选择没有RSA (set your own capabilities)，请用--expert开关重新启动gpg
    
    Possible actions for a RSA key: Sign Encrypt Authenticate
    Current allowed actions: Sign Encrypt
