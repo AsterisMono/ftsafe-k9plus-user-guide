@@ -9,6 +9,9 @@
 如果有缺失，勾选后点击`Save`，重新插入Key
 ## PGP
 [PGP on K9+](https://github.com/AsterisMono/ftsafe-k9plus-user-guide/blob/main/guides/pgp.md)
+
+[使用K9+签名GitHub Commit](https://github.com/AsterisMono/ftsafe-k9plus-user-guide/blob/main/guides/signcommit.md)
+
 ## FIDO & FIDO2
 一般不需要配置，可以直接使用。
 
